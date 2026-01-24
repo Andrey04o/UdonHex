@@ -2,6 +2,7 @@ using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon.Common;
+namespace Hex04o {
 [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
 public class RaycastButtonHandler : UdonSharpBehaviour
 {
@@ -96,4 +97,5 @@ public class RaycastButtonHandler : UdonSharpBehaviour
     public void Deactivate() {
         gameObject.SetActive(false);
     }
+}
 }

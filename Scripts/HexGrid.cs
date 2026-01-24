@@ -1,11 +1,13 @@
-﻿
-using com.cyborgAssets.inspectorButtonPro;
-using UdonSharp;
-using UnityEditor;
+﻿using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
-
+#if !COMPILER_UDONSHARP && UNITY_EDITOR
+using UnityEditor;
+using UdonSharpEditor;
+using UnityEditor.SceneManagement;
+#endif
+namespace Hex04o {
 public class HexGrid : MonoBehaviour
 {
     [SerializeReference]
@@ -26,15 +28,6 @@ public class HexGrid : MonoBehaviour
     public float padding = 15f;
     public Hex[,] cells;
     public HexGame hexGame;
-
-    void createGrid() {
-        cells = new Hex[height,width];
-        for (int z = 0; z < height; z++) {
-			for (int x = 0; x < width; x++) {
-				CreateCell(z, x);
-			}
-		}
-    }
     void CreateGridHex() {
         cells = new Hex[height,width+height];
         for (int x = 0; x < height; x++) {
@@ -45,7 +38,7 @@ public class HexGrid : MonoBehaviour
 		}
     }
     void CreateCell (int x, int z) {
-        #if UNITY_EDITOR
+        #if !COMPILER_UDONSHARP && UNITY_EDITOR
 		Vector3 position;
 		position.x = x * (outerRadius * 1.5f); 
 		position.y = 0;
@@ -61,63 +54,8 @@ public class HexGrid : MonoBehaviour
         //HexCreator.CreateHex(cells[x, z].gameObject, material);
         #endif
 	}
-/*
-    public List <Hex> GetNeighbours(int x, int y)
-    {
-        List <Hex> result = new List<Hex>();
-        int x1 = x + 1;
-        int x0 = x - 1;
-        int y1 = y + 1;
-        int y0 = y - 1;
 
-        
-        if (y1 < height)
-        // ADD (x, y1)
-            result.Add(cells[x, y1]);
-        
-        if (y0 >= 0)
-        // ADD (x, y0)
-            result.Add(cells[x, y0]);
-
-        if (x1 < width)
-        // ADD (x1, y)
-            result.Add(cells[x1, y]);
-        
-        if (x0 >= 0)
-        // ADD (x0, y)
-            result.Add(cells[x0, y]);
-
-
-        if (x%2 > 0)
-        {
-            if (x1 < width && y1 < height)
-            // ADD (x1, y1)
-                result.Add(cells[x1, y1]);
-        
-            if (x0 >= 0 && y1 < height)
-            // ADD (x0, y1)
-                result.Add(cells[x0, y1]);
-        }
-        else
-        {
-            if (x1 < width && y0 >= 0)
-            // ADD (x1, y0)
-                result.Add(cells[x1, y0]);
-        
-            if (x0 >= 0 && y0 >= 0)
-            // ADD (x0, y0)
-                result.Add(cells[x0, y0]);
-        }
-        return result;
-    }
-    */
-
-    void Start()
-    {
-        
-    }
-    [ProButton]
-    void Create() {
+    public void Create() {
         innerRadius = outerRadius * 0.866025404f;
         CreateGridHex();
         //Instantiate(hex);
@@ -134,7 +72,7 @@ public class HexGrid : MonoBehaviour
         }
     }
     
-    [ProButton] public void PushCellsToHexGame() {
+    public void PushCellsToHexGame() {
         hexGame.hexs = new Hex[height][];
         for (int i = 0; i < height; i++)
         {
@@ -147,20 +85,39 @@ public class HexGrid : MonoBehaviour
         }
     }
 
-    public void SetNeightbours() {
-    }
-/*
-    public MeshFilter meshFilter;
-    public string path;
-    [ProButton] public void SaveMesh() {
-
-        AssetDatabase.CreateAsset(meshFilter.sharedMesh, path);
-        AssetDatabase.SaveAssets();
-    }
-*/
-    // Update is called once per frame
-    void Update()
+}
+#if !COMPILER_UDONSHARP && UNITY_EDITOR
+[CustomEditor(typeof(HexGrid)), CanEditMultipleObjects]
+public class CustomInspectorEditorHexGrid : Editor
+{
+    public override void OnInspectorGUI()
     {
-        
+        if (UdonSharpGUI.DrawDefaultUdonSharpBehaviourHeader(target)) return;
+        // Update the serialized object to reflect changes
+        serializedObject.Update();
+
+        // Draw the default inspector properties (optional)
+        DrawDefaultInspector(); 
+
+        // Access the target object (the CustomInspectorBehaviour instance)
+        HexGrid myTarget = (HexGrid)target;
+
+        // Example of custom UI elements
+        EditorGUILayout.Space();
+        if(GUILayout.Button("Create")) {
+            myTarget.Create();
+            EditorUtility.SetDirty(myTarget);
+            EditorSceneManager.MarkSceneDirty(myTarget.gameObject.scene);
+        }
+        if(GUILayout.Button("PushCellsToHexGame")) {
+            myTarget.PushCellsToHexGame();
+            EditorUtility.SetDirty(myTarget);
+            EditorSceneManager.MarkSceneDirty(myTarget.gameObject.scene);
+        }
+
+        // Apply modified properties back to the serialized object
+        serializedObject.ApplyModifiedProperties();
     }
+}
+#endif
 }

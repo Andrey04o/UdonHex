@@ -6,6 +6,7 @@ using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
+namespace Hex04o {
 [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
 public class HexRestartButton : UdonSharpBehaviour
 {
@@ -42,4 +43,5 @@ public class HexRestartButton : UdonSharpBehaviour
             hexGame.PackToNetwork();
             hexGame.RequestSerialization();
     }
+}
 }

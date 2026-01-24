@@ -21,7 +21,7 @@ MonoBehaviour:
   compiledVersion: 2
   behaviourSyncMode: 0
   hasInteractEvent: 0
-  scriptID: -7845721460703798605
+  scriptID: 1843405452596686248
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
@@ -62,7 +62,7 @@ MonoBehaviour:
       Data: 3|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: HexHeapGrab[], Assembly-CSharp
+      Data: Hex04o.HexHeapGrab[], Hex
     - Name: 
       Entry: 8
       Data: 

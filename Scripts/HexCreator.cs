@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
-
+namespace Hex04o {
 public class HexCreator : MonoBehaviour
 {
     [SerializeReference]
@@ -192,4 +192,5 @@ public class HexCreator : MonoBehaviour
         //    Physics.Raycast(hex.transform.position, Vector3.down, 0.2f);
     }
     
+}
 }

@@ -3,6 +3,7 @@ using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
+namespace Hex04o {
 [UdonBehaviourSyncMode(BehaviourSyncMode.Continuous)]
 public class HexHeapGrab : UdonSharpBehaviour
 {
@@ -123,4 +124,5 @@ public class HexHeapGrab : UdonSharpBehaviour
         rotationSync = transform.rotation;
         positionSync = transform.position;
     }
+}
 }

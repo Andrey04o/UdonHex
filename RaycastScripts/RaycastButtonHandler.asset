@@ -21,7 +21,7 @@ MonoBehaviour:
   compiledVersion: 2
   behaviourSyncMode: 1
   hasInteractEvent: 0
-  scriptID: -1780946938204535152
+  scriptID: -6209612476941911699
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
@@ -116,7 +116,7 @@ MonoBehaviour:
       Data: 6|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: CursorController, Assembly-CSharp
+      Data: Hex04o.CursorController, Hex
     - Name: 
       Entry: 8
       Data: 
@@ -230,7 +230,7 @@ MonoBehaviour:
       Data: 13|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: RaycastButton, Assembly-CSharp
+      Data: Hex04o.RaycastButton, Hex
     - Name: 
       Entry: 8
       Data: 

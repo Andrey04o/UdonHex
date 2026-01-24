@@ -9,6 +9,7 @@ using UnityEngine;
 using VRC.SDK3.UdonNetworkCalling;
 using VRC.SDKBase;
 using VRC.Udon;
+namespace Hex04o {
 [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
 public class Hex : RaycastButton
 {
@@ -231,3 +232,4 @@ public class CustomInspectorEditorHex : Editor
     }
 }
 #endif
+}

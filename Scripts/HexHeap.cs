@@ -3,7 +3,7 @@ using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
-
+namespace Hex04o {
 public class HexHeap : UdonSharpBehaviour
 {
     public HexGame hexGame;
@@ -23,4 +23,6 @@ public class HexHeap : UdonSharpBehaviour
             hexGame.TakeColor(2);
         }
     }
+}
+
 }

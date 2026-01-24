@@ -2,7 +2,8 @@ using UdonSharp;
 using UnityEngine;
 using UnityEngine.UI;
 using VRC.Udon.Common;
-
+// For the future, in development
+namespace Hex04o {
 [DisallowMultipleComponent] [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
 public class CursorController : UdonSharpBehaviour
 {
@@ -97,4 +98,5 @@ public class CursorController : UdonSharpBehaviour
     public void SetVisibility(bool value) {
         cursorImage.enabled = value;
     }
+}
 }

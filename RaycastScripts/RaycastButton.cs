@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UdonSharp;
 using UnityEngine;
+namespace Hex04o {
 public class RaycastButton : UdonSharpBehaviour
 {
     virtual public void OnRaycastEnter() {
@@ -19,4 +20,5 @@ public class RaycastButton : UdonSharpBehaviour
     void OnMouseExit() {
         OnRaycastExit();
     }
+}
 }

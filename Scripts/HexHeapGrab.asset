@@ -21,7 +21,7 @@ MonoBehaviour:
   compiledVersion: 2
   behaviourSyncMode: 3
   hasInteractEvent: 0
-  scriptID: -147270140523456978
+  scriptID: 5943100406718694433
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
@@ -122,7 +122,7 @@ MonoBehaviour:
       Data: 7|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: HexGame, Assembly-CSharp
+      Data: Hex04o.HexGame, Hex
     - Name: 
       Entry: 8
       Data: 
@@ -182,7 +182,7 @@ MonoBehaviour:
       Data: 11|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: HexHeaps, Assembly-CSharp
+      Data: Hex04o.HexHeaps, Hex
     - Name: 
       Entry: 8
       Data: 
@@ -290,7 +290,7 @@ MonoBehaviour:
       Data: 17|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: RaycastButtonHandler, Assembly-CSharp
+      Data: Hex04o.RaycastButtonHandler, Hex
     - Name: 
       Entry: 8
       Data: 
@@ -926,7 +926,7 @@ MonoBehaviour:
       Data: 51|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: Hex, Assembly-CSharp
+      Data: Hex04o.Hex, Hex
     - Name: 
       Entry: 8
       Data: 

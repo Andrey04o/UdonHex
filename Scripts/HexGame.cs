@@ -3,15 +3,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using com.cyborgAssets.inspectorButtonPro;
 using TMPro;
 using UdonSharp;
 #if !COMPILER_UDONSHARP && UNITY_EDITOR
 using UdonSharpEditor;
-#endif
-using Unity.Mathematics;
 using UnityEditor;
-#if !COMPILER_UDONSHARP && UNITY_EDITOR
 using UnityEditor.SceneManagement;
 #endif
 using UnityEngine;
@@ -19,6 +15,7 @@ using UnityEngine.UI;
 using VRC;
 using VRC.SDKBase;
 using VRC.Udon;
+namespace Hex04o {
 [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class HexGame : UdonSharpBehaviour
 {
@@ -354,7 +351,7 @@ public class HexGame : UdonSharpBehaviour
 
 #if !COMPILER_UDONSHARP && UNITY_EDITOR
 [CustomEditor(typeof(HexGame)), CanEditMultipleObjects]
-public class CustomInspectorEditor : Editor
+public class CustomInspectorEditorHexGame : Editor
 {
     public override void OnInspectorGUI()
     {
@@ -401,3 +398,4 @@ public class CustomInspectorEditor : Editor
     }
 }
 #endif
+}

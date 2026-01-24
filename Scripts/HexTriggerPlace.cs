@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UdonSharp;
 using UnityEngine;
+namespace Hex04o {
 [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
 public class HexTriggerPlace : UdonSharpBehaviour
 {
@@ -24,4 +25,5 @@ public class HexTriggerPlace : UdonSharpBehaviour
         }
     }
 
+}
 }

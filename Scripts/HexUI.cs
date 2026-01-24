@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+namespace Hex04o {
 public class HexUI : MonoBehaviour
 {
     [Range(0f, 1f)] //1
@@ -21,4 +21,5 @@ public class HexUI : MonoBehaviour
     {
         
     }
+}
 }

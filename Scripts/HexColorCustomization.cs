@@ -11,6 +11,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
+namespace Hex04o {
 [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
 public class HexColorCustomization : UdonSharpBehaviour
 {
@@ -165,3 +166,4 @@ public class CustomInspectorEditorHexColorCusomization : Editor
     }
 }
 #endif
+}

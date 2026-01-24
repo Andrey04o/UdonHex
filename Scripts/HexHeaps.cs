@@ -3,7 +3,7 @@ using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
-
+namespace Hex04o {
 public class HexHeaps : UdonSharpBehaviour
 {
     public HexHeapGrab[] list;
@@ -20,8 +20,5 @@ public class HexHeaps : UdonSharpBehaviour
             }
         }
     }
-
-
-
-
+}
 }
