@@ -170,7 +170,7 @@ MonoBehaviour:
       Data: 9|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: Hex04o.HexGame, Assembly-CSharp
+      Data: Hex04o.HexGame, Hex
     - Name: 
       Entry: 8
       Data: 
@@ -482,7 +482,7 @@ MonoBehaviour:
       Data: 25|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: Hex04o.Hex[], Assembly-CSharp
+      Data: Hex04o.Hex[], Hex
     - Name: 
       Entry: 8
       Data: 
@@ -1184,7 +1184,7 @@ MonoBehaviour:
       Data: 58|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: Hex04o.HexTriggerPlace, Assembly-CSharp
+      Data: Hex04o.HexTriggerPlace, Hex
     - Name: 
       Entry: 8
       Data: 

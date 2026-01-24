@@ -12926,17 +12926,15 @@ MonoBehaviour:
   useAssignedLayers: 0
   DynamicPrefabs: []
   DynamicMaterials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 2100000, guid: 133a2867b24c81847a142bab9336e686, type: 2}
-  - {fileID: 2100000, guid: 3a7b7c54c51c87e47b821428d7a368ef, type: 2}
-  - {fileID: 2100000, guid: 0a99ca1e9e2310f418bc0f57173b1b9e, type: 2}
-  - {fileID: 2100000, guid: 5b2beb5d165a2944285e591eb54ddc84, type: 2}
-  - {fileID: 2100000, guid: 1a25faaefbf0557488a927709d25ef19, type: 2}
   - {fileID: 2100000, guid: 173036ae1407d5747968029f0c613c94, type: 2}
+  - {fileID: 2100000, guid: 1a25faaefbf0557488a927709d25ef19, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5b2beb5d165a2944285e591eb54ddc84, type: 2}
+  - {fileID: 2100000, guid: 0a99ca1e9e2310f418bc0f57173b1b9e, type: 2}
+  - {fileID: 2100000, guid: 3a7b7c54c51c87e47b821428d7a368ef, type: 2}
+  - {fileID: 2100000, guid: 133a2867b24c81847a142bab9336e686, type: 2}
   - {fileID: -6478536213147159724, guid: 77473168ba54de44eba9ca50d8976f3e, type: 3}
   - {fileID: -3846018093981099296, guid: 77473168ba54de44eba9ca50d8976f3e, type: 3}
-  - {fileID: 2100000, guid: 4d9b688cc3ddf1847b0081ffdf5288dc, type: 2}
-  - {fileID: -6478536213147159724, guid: c4699eb9a2a86b449b268c6767f708dd, type: 3}
   - {fileID: 2100000, guid: aca4ddd016b14b54bbc4b04819920c40, type: 2}
   LightMapsNear: []
   LightMapsFar: []
@@ -14504,34 +14502,8 @@ MonoBehaviour:
     ID: 398
     SerializedTypeNames:
     - VRC.Udon.UdonBehaviour
-  - gameObject: {fileID: 0}
-    ID: 399
-    SerializedTypeNames:
-    - VRC.SDK3.Components.VRCPickup
   - gameObject: {fileID: 4349884238876265676}
     ID: 143
-    SerializedTypeNames:
-    - VRC.Udon.UdonBehaviour
-  - gameObject: {fileID: 0}
-    ID: 400
-    SerializedTypeNames:
-    - VRC.SDK3.Components.VRCPickup
-  - gameObject: {fileID: 0}
-    ID: 401
-    SerializedTypeNames:
-    - VRC.Udon.UdonBehaviour
-    - VRC.SDK3.Components.VRCPickup
-  - gameObject: {fileID: 0}
-    ID: 402
-    SerializedTypeNames:
-    - VRC.SDK3.Components.VRCPickup
-    - VRC.Udon.UdonBehaviour
-  - gameObject: {fileID: 0}
-    ID: 403
-    SerializedTypeNames:
-    - VRC.Udon.UdonBehaviour
-  - gameObject: {fileID: 0}
-    ID: 408
     SerializedTypeNames:
     - VRC.Udon.UdonBehaviour
   - gameObject: {fileID: 319444584}
@@ -16165,24 +16137,6 @@ MonoBehaviour:
     - VRC.Udon.UdonBehaviour
   - gameObject: {fileID: 49025505}
     ID: 813
-    SerializedTypeNames:
-    - VRC.Udon.UdonBehaviour
-  - gameObject: {fileID: 0}
-    ID: 814
-    SerializedTypeNames:
-    - VRC.SDK3.Components.VRCPickup
-    - VRC.Udon.UdonBehaviour
-  - gameObject: {fileID: 0}
-    ID: 815
-    SerializedTypeNames:
-    - VRC.Udon.UdonBehaviour
-  - gameObject: {fileID: 0}
-    ID: 816
-    SerializedTypeNames:
-    - VRC.SDK3.Components.VRCPickup
-    - VRC.Udon.UdonBehaviour
-  - gameObject: {fileID: 0}
-    ID: 817
     SerializedTypeNames:
     - VRC.Udon.UdonBehaviour
   - gameObject: {fileID: 488239519}
