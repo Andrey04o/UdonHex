@@ -4,7 +4,7 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 namespace Hex04o {
-[UdonBehaviourSyncMode(BehaviourSyncMode.Continuous)]
+[UdonBehaviourSyncMode(BehaviourSyncMode.None)]
 public class HexHeapGrab : UdonSharpBehaviour
 {
     public VRC_Pickup pickup;
@@ -18,17 +18,17 @@ public class HexHeapGrab : UdonSharpBehaviour
     public MeshCollider meshCollider;
     public Vector3 positionOriginal;
     public Quaternion rotationOriginal;
-    [UdonSynced] public bool isGrabbed = false;
-    [UdonSynced] public Vector3 positionSync;
-    [UdonSynced] public Quaternion rotationSync;
+    /*[UdonSynced]*/ public bool isGrabbed = false;
+    //[UdonSynced] public Vector3 positionSync;
+    //[UdonSynced] public Quaternion rotationSync;
     public bool isRed = false;
     public bool isBlue = false;
     Hex hexCurrent;
-    void Awake() {
+    void Start() {
         positionOriginal = transform.position;
         rotationOriginal = transform.rotation;
-        positionSync = transform.position;
-        rotationSync = transform.rotation;
+        //positionSync = transform.position;
+        //rotationSync = transform.rotation;
     }
 
     public override void OnDrop()
@@ -39,7 +39,7 @@ public class HexHeapGrab : UdonSharpBehaviour
     public override void OnPickup()
     {
         base.OnPickup();
-        Networking.SetOwner(Networking.LocalPlayer, this.gameObject);
+        //Networking.SetOwner(Networking.LocalPlayer, this.gameObject);
         TakeHex();
     }
 
@@ -59,7 +59,7 @@ public class HexHeapGrab : UdonSharpBehaviour
         isGrabbed = false;
         PlaceHex();
         ChangeFormToHeap();
-        RequestSerialization();
+        //RequestSerialization();
         if (isRed) {
             hexGame.PlayerTakePiece(false, 1);
         }
@@ -71,7 +71,7 @@ public class HexHeapGrab : UdonSharpBehaviour
     void TakeHex() {
         isGrabbed = true;
         ChangeFormToHex();
-        RequestSerialization();
+        //RequestSerialization();
         if (isRed) {
             hexGame.PlayerTakePiece(true, 1);
         }
@@ -109,6 +109,7 @@ public class HexHeapGrab : UdonSharpBehaviour
             }
         }
     }
+    /*
     public override void OnDeserialization() {
         if (isGrabbed == true) {
             ChangeFormToHex();
@@ -124,5 +125,6 @@ public class HexHeapGrab : UdonSharpBehaviour
         rotationSync = transform.rotation;
         positionSync = transform.position;
     }
+    */
 }
 }
