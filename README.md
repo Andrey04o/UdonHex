@@ -1,7 +1,7 @@
 # UdonHex
 A Hex table game made for VRChat using UdonSharp
 
-![Hex game](https://github.com/Andrey04o/UdonHex-vpm/tree/main/screenshot1.png)
+![Hex game](https://github.com/Andrey04o/UdonHex-vpm/blob/main/screenshot1.png?raw=true)
 
 [Video demonstration](https://youtu.be/Z-UBoJWBSF4)
 
