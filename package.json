@@ -1,15 +1,15 @@
 {
   "name": "com.andrey04o.udonhex",
   "displayName": "com.andrey04o.udonhex",
-  "version": "0.0.1",
-  "description": "Describe this Package",
+  "version": "0.3.1",
+  "description": "Workable Hex table game for VRChat worlds",
   "dependencies": {},
   "gitDependencies": {},
   "vpmDependencies": {
     "com.vrchat.worlds": "3.10.1"
   },
   "author": {
-    "name": "Andrey",
+    "name": "Andrey04o",
     "email": "cool.dddaa@yandex.ru",
     "url": "https://andrey04o.itch.io/"
   },
