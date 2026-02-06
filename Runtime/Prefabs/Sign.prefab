@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4507209913633872005}
   - component: {fileID: 6410347227750548648}
   - component: {fileID: 310958361542442940}
+  - component: {fileID: 5516540869205589446}
   m_Layer: 13
   m_Name: Sign
   m_TagString: Untagged
@@ -103,7 +104,7 @@ MonoBehaviour:
   ExactGrip: {fileID: 0}
   allowManipulationWhenEquipped: 0
   orientation: 0
-  AutoHold: 0
+  AutoHold: 2
   InteractionText: 
   UseText: Use
   useEventBroadcastType: 0
@@ -117,6 +118,21 @@ MonoBehaviour:
   currentlyHeldBy: {fileID: 0}
   pickupable: 1
   proximity: 2
+  version: 1
+--- !u!114 &5516540869205589446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871414971633679738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1783056023, guid: 661092b4961be7145bfbe56e1e62337b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllowCollisionOwnershipTransfer: 1
+  ForceKinematicOnRemote: 0
 --- !u!1 &5845741565756556001
 GameObject:
   m_ObjectHideFlags: 0
