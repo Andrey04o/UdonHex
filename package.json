@@ -1,0 +1,19 @@
+{
+  "name": "com.andrey04o.udonhex",
+  "displayName": "com.andrey04o.udonhex",
+  "version": "0.0.1",
+  "description": "Describe this Package",
+  "dependencies": {},
+  "gitDependencies": {},
+  "vpmDependencies": {
+    "com.vrchat.worlds": "3.10.1"
+  },
+  "author": {
+    "name": "Andrey",
+    "email": "cool.dddaa@yandex.ru",
+    "url": "https://andrey04o.itch.io/"
+  },
+  "legacyFolders": {},
+  "legacyFiles": {},
+  "localPath": "E:\\VRChatProjects\\UdonHex\\Packages\\com.andrey04o.udonhex"
+}
