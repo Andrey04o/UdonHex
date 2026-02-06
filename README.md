@@ -24,6 +24,10 @@ A Hex table game made for VRChat using UdonSharp
 
 </details>
 
+# How to use
+
+Just drag and drop the `HexGame` prefab to your world. You can find it in the `Runtime/Prefabs` folder.
+
 ## Developed by Andrey04o
 
 [VRChat profile](https://vrchat.com/home/user/usr_fee3cab2-a580-4da8-a002-b5f37c7c7b6f)
